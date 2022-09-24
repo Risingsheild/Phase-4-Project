@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-   has_many :tickets
-   has_many :events, through: :tickets
+   has_many :reservations
+   has_many :campsites, through: :reservations
    
    validates :username, uniqueness: true
 

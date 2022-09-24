@@ -21,10 +21,11 @@ event2 = Event.create(
 )
 
 event3 = Event.create(
-    name: "Football Game"
-    description: "Seahawks vs Falcons"
+    name: "Soccer Game"
+    description: "OL vs Falcons"
     time: "1:25PM"
 )
+
 
 
 
