@@ -6,26 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "Crearting Event..."
+puts "Creating Campsites"
 
-event1 = Event.create(
-    name: "Football Game"
-    description: "Seahawks vs Falcons"
-    time: "Sun Sept 25th, 1:25PM"
+cs1 = Campsite.create(
+    site: 56
+    location: "Deception Pass"
+    available: true 
+    img: "https://www.campsitephotos.com/photo/camp/44706/Deception_Pass_056.jpg"
 )
-
-event2 = Event.create(
-    name: "Soccer Game"
-    description: "Sounders vs Cincinnati"
-    time: "Tues Sept 27th, 7:00PM"
-)
-
-event3 = Event.create(
-    name: "Soccer Game"
-    description: "OL vs Falcons"
-    time: "1:25PM"
-)
-
 
 
 
