@@ -13,7 +13,7 @@ class ReviewsController < ApplicationController
 
     def create 
         review = Review.create(comment: params[:comment], user_id: params[:user_id], game_id: params[:game_id])
-        redner json: review, status: :created
+        render json: review, status: :created
     end
 
     ## Update Method 
