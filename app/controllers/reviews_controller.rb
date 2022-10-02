@@ -12,7 +12,11 @@ class ReviewsController < ApplicationController
     ## Create Method
 
     def create 
-        review = Review.create(comment: params[:comment], user_id: params[:user_id], game_id: params[:game_id])
+        review = Review.create(
+            comment: params[:comment], 
+            user_id: params[:user_id], 
+            game_id: params[:game_id]
+        )
         render json: review, status: :created
     end
 

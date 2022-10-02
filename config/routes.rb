@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  resources: reviews
-  resources: platforms, only: [:index, :show]
-  resources: games, only: [:index, :show, :create]
-  resources: users
+  resources :reviews
+  resources :platforms, only: [:index, :show]
+  resources :games, only: [:index, :show, :create]
+  resources :users
 
   get '/me', to: "users#show"
   post '/login', to: "sessions#login"
