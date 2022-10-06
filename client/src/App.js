@@ -1,6 +1,7 @@
 import {useEffect, UseEffect, useState} from "react"
 import {Route, Routes} from "react-router-dom"
 import Login from "./components/Login";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [currentUser, setCurrentUser] = useState('')
@@ -14,11 +15,14 @@ function App() {
     })
   }, [])
 
-  return (
+console.log(currentUser);
+ 
+return (
   <div className="App">
     <h2>Lets Review Some Games</h2>
     <Routes>
-      <Route path='/login' exact element={<Login setCurrentUser={setCurrentUser}/>}/>
+      <Route path='/' exact element={<Login setCurrentUser={setCurrentUser}/>}/>
+      <Route path='/categories' exact element={<NavBar/>}/>
     </Routes>
   </div>  
   );

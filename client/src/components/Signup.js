@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {NavLink} from "react-router-dom"
+import {NavLink, useNavigate} from "react-router-dom"
 
 function Signup() {
     const [formData, setFormData] = useState({
@@ -7,6 +7,8 @@ function Signup() {
         password: "",
         email: "",
     })
+
+    const navigate = useNavigate()
 
 function handleChange(e){
     setFormData({
@@ -35,6 +37,7 @@ function handleSubmit(e){
             password: "",
             email: ""
         })
+    navigate('/')
     })
 }
     return (

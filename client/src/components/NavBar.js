@@ -3,9 +3,10 @@ import {NavLink} from "react-router-dom"
 function NavBar(){
     return( 
         <div className="navBar">
-            <NavLink to='/pc/games'>PC Games</NavLink>
-            <NavLink to='/xbox/games'>Xbox Games</NavLink>
-            <NavLink to='/ps/games'>PlayStation Games</NavLink>
+            <NavLink to='/'>Home Page</NavLink>
+            <NavLink to='/games'>Games</NavLink>
+            <NavLink to='/platforms'>Platforms</NavLink>
+            <NavLink to='/reviews'>Reviews</NavLink>
         </div>
     )
 }

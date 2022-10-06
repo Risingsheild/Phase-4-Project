@@ -1,10 +1,13 @@
 import {useState} from "react"
+import {useNavigate} from "react-router-dom"
 
 function Login({setCurrentUser}) {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [errors, setErrors] = useState([])
     const [login, setLogin] = useState('')
+
+    const navigate = useNavigate()
 
 
     function handleSubmit(e) {
@@ -25,9 +28,10 @@ function Login({setCurrentUser}) {
         }
         else{
             res.json().then(e => setErrors(Object.entries(e.error).flat())) 
-        }
+        } 
+        navigate('/categories')
     })
-
+   
     }
 
     return (
