@@ -73,7 +73,7 @@ function handleSubmit(e){
                     <br />
                     <button type="submit">Create Account</button>
             </form>
-            <NavLink to='/login' replace>
+            <NavLink to='/' replace>
                 Already have an Account? Login!
             </NavLink>
         </div>

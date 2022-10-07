@@ -2,6 +2,7 @@ import {useEffect, UseEffect, useState} from "react"
 import {Route, Routes} from "react-router-dom"
 import Login from "./components/Login";
 import NavBar from "./components/NavBar";
+import PlatformList from "./components/PlatformList";
 
 function App() {
   const [currentUser, setCurrentUser] = useState('')
@@ -23,6 +24,7 @@ return (
     <Routes>
       <Route path='/' exact element={<Login setCurrentUser={setCurrentUser}/>}/>
       <Route path='/categories' exact element={<NavBar/>}/>
+      <Route path='/platforms' exact element={<PlatformList/>}/>
     </Routes>
   </div>  
   );
