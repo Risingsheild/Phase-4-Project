@@ -1,8 +1,10 @@
-import {useEffect, UseEffect, useState} from "react"
+import {useEffect, useState} from "react"
 import {Route, Routes} from "react-router-dom"
 import Login from "./components/Login";
 import NavBar from "./components/NavBar";
 import PlatformList from "./components/PlatformList";
+import ReviewList from "./components/ReviewList"
+import GameList from "./components/GameList"
 
 function App() {
   const [currentUser, setCurrentUser] = useState('')
@@ -25,6 +27,8 @@ return (
       <Route path='/' exact element={<Login setCurrentUser={setCurrentUser}/>}/>
       <Route path='/categories' exact element={<NavBar/>}/>
       <Route path='/platforms' exact element={<PlatformList/>}/>
+      <Route path='/reviews' exact element={<ReviewList/>}/>
+      <Route path='/games' exact element={<GameList />}/>
     </Routes>
   </div>  
   );
