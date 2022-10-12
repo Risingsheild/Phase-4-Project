@@ -1,0 +1,16 @@
+.App {
+    background-color: rgba(56, 55, 20, 0.373);
+   }
+
+
+.Gameform{
+    background-color:rgba(218, 0, 252, 0.555);
+    color:rgb(0, 0, 0); 
+    width: 350px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    border-radius: 5;
+}
