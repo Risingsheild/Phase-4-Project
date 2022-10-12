@@ -8,6 +8,8 @@
 
 puts "Seeding Data"
 
+#----USERS-----
+
 user1 = User.create(username: "Nick Wells", password: "123")
 
 #-----PLATFORMS-----
@@ -78,6 +80,37 @@ review1 = Review.create(
     comment: "Played many of hours and has consitent updates to keep it fun and new"
     user_id: user1.id
     game_id: LOL.id
+)
+
+review2 = Review.create(
+    comment: "Classic Xbox Exclusive game with a long series of games"
+    user_id: user1.id
+    game_id: Halo.id
+
+    )
+
+review3 = Review.create(
+    comment: "One of my favorite Playstation games very happy with the new game"
+    user_id: user1.id
+    game_id: Gow.id
+)
+
+review4 = Review.create(
+    comment: "Always a game you could pick up and play have something new to do giant world to explore"
+    user_id: user1.id
+    game_id: LostArk.id
+)
+
+review5 = Review.create(
+    comment: "Has a great multiplayer and Campaign story to the game"
+    user_id: user1.id
+    game_id: Gears5.id
+)
+
+review6 = Review.create(
+    comment: "Comabt in the game is unique and fun to play"
+    user_id: user1.id
+    game_id: Horizon.id
 )
 
 
