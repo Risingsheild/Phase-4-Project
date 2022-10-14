@@ -16,3 +16,5 @@ function ReviewCard({reviewInfo}){
     )
 
 }
+
+export default ReviewCard

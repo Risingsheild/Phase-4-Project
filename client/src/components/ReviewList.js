@@ -1,5 +1,6 @@
 import { useEffect, useState} from "react";
 import ReviewForm from "./ReviewForm";
+import ReviewCard from "./ReviewCard"
 
 function ReviewList(){
     const[rData, setRData] = useState([])

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {useNavigate} from "react-router"
+import {useNavigate} from "react-router-dom"
 
 function ReviewForm() {
     const[reviewData, setReviewData] = useState({
@@ -8,7 +8,7 @@ function ReviewForm() {
         game_id: "Add game_id"
     })
 
-    navigate = useNavigate()
+    const navigate = useNavigate()
 
     function handleChange(e){
         setReviewData({
